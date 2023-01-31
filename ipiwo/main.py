@@ -88,7 +88,12 @@ def parse_categories(node: OptionalNode) -> list[str]:
     if not node:
         return []
 
-    return [{"category": category.text.strip(), "href": category['href']} for category in node.select('a')]
+    return [
+        {
+            "category": category.text.strip(), 
+            "href": category['href']
+        } for category in node.select('a')
+    ]
 
 def parse_bundle(node: OptionalNode) -> list[str] | None:
     if not node:
@@ -97,7 +102,7 @@ def parse_bundle(node: OptionalNode) -> list[str] | None:
     products = node.select('div.woosb-product')
     return [
         {
-            'name': product.select_one('div.woosb-title a').text, 
+            'name': product.select_one('div.woosb-title a').text.strip(), 
             'href': product.select_one('div.woosb-thumb a')['href'], 
             'thumbnail': product.select_one('div.woosb-thumb img').attrs['data-src']
         } for product in products
@@ -180,7 +185,6 @@ def main() -> None:
         datefmt='%Y-%m-%d %H:%M:%S'
     )
 
-    
     start_time = time.perf_counter()
 
     beers_urls = collect_all_beers_links_through_pages(SHOP_BASE_URL)
