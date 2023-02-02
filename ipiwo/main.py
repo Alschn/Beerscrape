@@ -13,9 +13,7 @@ from bs4 import BeautifulSoup
 from bs4.element import NavigableString, ResultSet, Tag
 
 SHOP_BASE_URL = 'https://ipiwo.pl/sklep/'
-ACTIVE_DISCOUNTS_URL = 'https://ipiwo.pl/aktualne-promocje/'    # TODO later
-
-RESULTS_JSON_PATH = Path(__file__).parent / 'results.json'
+ACTIVE_DISCOUNTS_URL = 'https://ipiwo.pl/aktualne-promocje/'
 
 OptionalNode = Tag | NavigableString | None
 
@@ -26,8 +24,8 @@ def extract_links(a_tags: list[Tag]) -> list[str]:
     urls = [a_tag['href'] for a_tag in a_tags]
     return urls
 
-def parse_next_page_link(a_tag: Tag | None) -> str:
-    if not a_tag:
+def parse_next_page_link(a_tag: OptionalNode) -> str | None:
+    if not a_tag or isinstance(a_tag, NavigableString):
         return
     
     return a_tag['href']
@@ -49,7 +47,7 @@ def parse_text_node(node: OptionalNode) -> str | None:
     
     return normalize_text(node.text.strip())
 
-def text_to_number(text: str) -> str:
+def text_to_number(text: str) -> float:
     return float(text.strip().replace(',', '.'))
 
 def parse_number(node: OptionalNode) -> float | None:
@@ -58,7 +56,7 @@ def parse_number(node: OptionalNode) -> float | None:
 
     return text_to_number(text)
 
-def parse_price(node: OptionalNode) -> str | None:
+def parse_price(node: OptionalNode) -> float | None:
     if not (text := parse_text_node(node)):
         return
 
@@ -84,8 +82,8 @@ def parse_price_nodes(nodes: ResultSet):
 
     return regular_price_node, discount_price_node
 
-def parse_categories(node: OptionalNode) -> list[str]:
-    if not node:
+def parse_categories(node: OptionalNode) -> list[dict[str, Any]]:
+    if not node or isinstance(node, NavigableString):
         return []
 
     return [
@@ -95,8 +93,8 @@ def parse_categories(node: OptionalNode) -> list[str]:
         } for category in node.select('a')
     ]
 
-def parse_bundle(node: OptionalNode) -> list[str] | None:
-    if not node:
+def parse_bundle(node: OptionalNode) -> list[dict[str, Any]]:
+    if not node or isinstance(node, NavigableString):
         return []
 
     products = node.select('div.woosb-product')
@@ -138,7 +136,7 @@ def parse_beer_page(url: str, content: str | bytes) -> dict[str, Any]:
         'bundle': bundle
     }
 
-def request_beers_page(url: str) -> list[str]:
+def request_beers_page(url: str) -> list[str] | None:
     try:
         response = requests.get(url)
         results = parse_beers_page(url, response.text)
@@ -146,7 +144,7 @@ def request_beers_page(url: str) -> list[str]:
     except Exception as e:
         logging.error(e, exc_info=True)
 
-async def request_beer_details_page(url: str, session: ClientSession) -> dict[str, Any]:
+async def request_beer_details_page(url: str, session: ClientSession) -> dict[str, Any] | None:
     try:
         logging.info(f"Fetching beer from {url}")
         response = await session.get(url)
@@ -165,7 +163,10 @@ def collect_all_beers_links_through_pages(start_url: str) -> list[str]:
     current_page = start_url
 
     while current_page:
-        current_urls, next_page_url = request_beers_page(current_page)
+        result = request_beers_page(current_page)
+        if not result:
+            break
+        current_urls, next_page_url = result
         urls.extend(current_urls)
         current_page = next_page_url
 
@@ -175,19 +176,15 @@ def save_results_to_json(data: Any, path: str | Path, indent: int = 2) -> None:
     with open(path, 'w', encoding='utf8') as f:
         json.dump(data, f, ensure_ascii=False, indent=indent)
 
-def main() -> None:
-    if platform.system() == 'Windows':
-        asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
 
-    logging.basicConfig(
-        format='%(asctime)s.%(msecs)03d %(levelname)-4s %(message)s',
-        level=logging.INFO,
-        datefmt='%Y-%m-%d %H:%M:%S'
-    )
-
+def scrape(
+    base_url: str, 
+    output_path: str | Path, 
+    save_to_json: bool = True
+):
     start_time = time.perf_counter()
 
-    beers_urls = collect_all_beers_links_through_pages(SHOP_BASE_URL)
+    beers_urls = collect_all_beers_links_through_pages(base_url)
 
     logging.info(f'All beers urls scraped in {time.perf_counter() - start_time:2f} seconds.')
 
@@ -202,9 +199,39 @@ def main() -> None:
     non_empty_data = list(filter(bool, beers))      # in case task fails and returns None
     non_empty_data.sort(key=lambda r: r['name'])    # because of asynchronous work data will be out of order
 
-    logging.info(f'Writing results to json file...')
+    if save_to_json:
+        logging.info(f'Writing results to json file...')
+        save_results_to_json(non_empty_data, path=output_path)
 
-    save_results_to_json(non_empty_data, path=RESULTS_JSON_PATH)
+def scrape_beers_in_shop() -> None:
+    output_path = Path(__file__).parent / 'beers.json'
+    scrape(
+        SHOP_BASE_URL, 
+        output_path,
+        save_to_json=True
+    )
+
+def scrape_discounted_beers() -> None:
+    output_path = Path(__file__).parent / 'discounts.json'
+    scrape(
+        ACTIVE_DISCOUNTS_URL, 
+        output_path,
+        save_to_json=True
+    )
+
+def main() -> None:
+    if platform.system() == 'Windows':
+        asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+
+    logging.basicConfig(
+        format='%(asctime)s.%(msecs)03d %(levelname)-4s %(message)s',
+        level=logging.INFO,
+        datefmt='%Y-%m-%d %H:%M:%S'
+    )
+
+    scrape_beers_in_shop()
+
+    # scrape_discounted_beers()
 
 if __name__ == '__main__':
     main()

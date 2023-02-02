@@ -130,4 +130,7 @@ dmypy.json
 
 .idea
 .fleet
-results.json
+
+# results
+results
+*/*.json
