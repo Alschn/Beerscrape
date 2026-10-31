@@ -1,0 +1,38 @@
+{
+  "url": "https://pspd.org.pl/style-piwa/irish-stout",
+  "source": "pspd-styles",
+  "name": "Irish Stout",
+  "extract_blg": {
+    "min": 9.0,
+    "max": 11.0
+  },
+  "abv": {
+    "min": 4.0,
+    "max": 4.5
+  },
+  "ibu": {
+    "min": 25.0,
+    "max": 45.0
+  },
+  "color_ebc": {
+    "min": 100.5,
+    "max": 157.6
+  },
+  "description": "Wygląd\nBarwa od ciemnobrązowej do czarnej, zwykle nieprzejrzyste. Średnio obfita, trwała, drobno pęcherzykowa do średnio pęcherzykowej piana koloru od beżowego do jasnobrązowego.\nAromat\nBalans po stronie palonej słodowości. Dominują aromaty kawowe, palone, kojarzące się z gorzką czekoladą i kakao na poziomie od średniego do średnio wysokiego. Owocowość (czerwone jabłka, gruszki, truskawki, jagody) pochodząca od estrów na poziomie od niewyczuwalnych do średnio niskich. Aromaty chmielowe (ziołowe, kwiatowe, ziemiste, tytoniowe) na poziomie od niewyczuwalnego do niskiego. Brak aromatów alkoholowych i diacetylu.\nSmak\nBalans po stronie odsłodowej słodyczy kontrowanej chmielowo-paloną goryczką. Na pierwszym planie średnie do średnio wysokich smaki słodowe: czekoladowe, kawowe, kakao, palone. Smaki chmielowe mogą wystąpić maksymalnie na poziomie niskim. Mogą mieć charakter ziołowy, kwiatowy, ziemisty czy tytoniowy. Estry owocowe (czerwone jabłko, gruszka, truskawki, jagody) od niewyczuwalnych do średnio niskich. Może pojawić się kwaśność na poziomie do niskiego pochodząca od słodów palonych, ale najlepsze egzemplarze będą pozbawione tej cechy. Brak diacetylu. Smak spalenizny jest niedopuszczalny. Finisz od wytrawnego do półwytrawnego o średnio długim słodowym posmaku.\nGoryczka\nŚrednio niska do średniej, może pochodzić zarówno od chmielu jak i palonych słodów. Może być długa, ale nie zalegająca.\nOdczucie w ustach\nWysycenie niskie do średniego. Pełnia od niskiej do średnio niskiej. Gładka tekstura – nie może być ostre, czy pikantne. Palone słody mogą wnosić efekt ściągania - maksymalnie na niskim poziomie.\nKomentarz\nCiemne, lekkie i wytrawne piwo ale z wyraźnie zaznaczonym palonym smakiem – często podobne do kawy. Smakiem przypominać ma bardzo gorzką czekoladę lub kawę zbożową.\nPalony charakter może być suchy i kawo–podobny do częściowo czekoladowego.\nSurowce i technologia\nSkład i pH wody powinny zostać każdorazowo dobrane pod kątem projektowanej receptury. Niemniej jednak sugeruje się trzymanie poniższych widełek:\n- Ca (wapń) – 50-75 ppm\n- Mg (magnez) – 0-30 ppm\n- Na (sód) – 0-100 ppm\n- Cl (chlorki) – 50-100 ppm\n- SO4 (siarczany) – 50-150 ppm\n- HCO3 (dwuwęglany) – 80-160 ppm\nPodczas modyfikowania wody należy mieć także dwie rzeczy na uwadze:\n- w piwach ciemnych potrzebne jest więcej alkaliczności resztkowej dla zrównoważenia kwasowości słodów specjalnych\n- kluczowy dla podkreślenia słodowości jest stosunek chlorków do siarczanów, co najmniej 1:1 albo 2:1.\nPodstawę zasypu stanowi zwykle słód pale ale uzupełniony o płatki jęczmienne. Palonego charakteru i czarnego koloru nadaje palony jęczmień.\nZalecane jednotemperaturowe zacieranie w okolicach 67° C. W zależności od użytego szczepu drożdzy wskazane jest dostosowanie tej temperatury. Warto jednak pamiętać, iż zbyt wysokie temperatury mogą obniżyć fermentowalność brzeczki i wprowadzić garbnikowość.\nUżyj angielskich odmian chmielu tj. East Kent Goldings, Fuggles, Target, Challenger, głównie na goryczkę. Pomiń dodawanie chmielu na smak i aromat.\nDo fermentacji użyj klasycznych brytyjskich drożdży lub neutralnych drożdży z USA.\nPamiętaj, że odfermentowanie może różnić się w zależności od szczepu, co ostatecznie wpłynie na balans piwa.",
+  "sections": {
+    "appearance": "Barwa od ciemnobrązowej do czarnej, zwykle nieprzejrzyste. Średnio obfita, trwała, drobno pęcherzykowa do średnio pęcherzykowej piana koloru od beżowego do jasnobrązowego.",
+    "aroma": "Balans po stronie palonej słodowości. Dominują aromaty kawowe, palone, kojarzące się z gorzką czekoladą i kakao na poziomie od średniego do średnio wysokiego. Owocowość (czerwone jabłka, gruszki, truskawki, jagody) pochodząca od estrów na poziomie od niewyczuwalnych do średnio niskich. Aromaty chmielowe (ziołowe, kwiatowe, ziemiste, tytoniowe) na poziomie od niewyczuwalnego do niskiego. Brak aromatów alkoholowych i diacetylu.",
+    "taste": "Balans po stronie odsłodowej słodyczy kontrowanej chmielowo-paloną goryczką. Na pierwszym planie średnie do średnio wysokich smaki słodowe: czekoladowe, kawowe, kakao, palone. Smaki chmielowe mogą wystąpić maksymalnie na poziomie niskim. Mogą mieć charakter ziołowy, kwiatowy, ziemisty czy tytoniowy. Estry owocowe (czerwone jabłko, gruszka, truskawki, jagody) od niewyczuwalnych do średnio niskich. Może pojawić się kwaśność na poziomie do niskiego pochodząca od słodów palonych, ale najlepsze egzemplarze będą pozbawione tej cechy. Brak diacetylu. Smak spalenizny jest niedopuszczalny. Finisz od wytrawnego do półwytrawnego o średnio długim słodowym posmaku.",
+    "bitterness": "Średnio niska do średniej, może pochodzić zarówno od chmielu jak i palonych słodów. Może być długa, ale nie zalegająca.",
+    "mouthfeel": "Wysycenie niskie do średniego. Pełnia od niskiej do średnio niskiej. Gładka tekstura – nie może być ostre, czy pikantne. Palone słody mogą wnosić efekt ściągania - maksymalnie na niskim poziomie.",
+    "comment": "Ciemne, lekkie i wytrawne piwo ale z wyraźnie zaznaczonym palonym smakiem – często podobne do kawy. Smakiem przypominać ma bardzo gorzką czekoladę lub kawę zbożową.\nPalony charakter może być suchy i kawo–podobny do częściowo czekoladowego.",
+    "ingredients_and_technology": "Skład i pH wody powinny zostać każdorazowo dobrane pod kątem projektowanej receptury. Niemniej jednak sugeruje się trzymanie poniższych widełek:\n- Ca (wapń) – 50-75 ppm\n- Mg (magnez) – 0-30 ppm\n- Na (sód) – 0-100 ppm\n- Cl (chlorki) – 50-100 ppm\n- SO4 (siarczany) – 50-150 ppm\n- HCO3 (dwuwęglany) – 80-160 ppm\nPodczas modyfikowania wody należy mieć także dwie rzeczy na uwadze:\n- w piwach ciemnych potrzebne jest więcej alkaliczności resztkowej dla zrównoważenia kwasowości słodów specjalnych\n- kluczowy dla podkreślenia słodowości jest stosunek chlorków do siarczanów, co najmniej 1:1 albo 2:1.\nPodstawę zasypu stanowi zwykle słód pale ale uzupełniony o płatki jęczmienne. Palonego charakteru i czarnego koloru nadaje palony jęczmień.\nZalecane jednotemperaturowe zacieranie w okolicach 67° C. W zależności od użytego szczepu drożdzy wskazane jest dostosowanie tej temperatury. Warto jednak pamiętać, iż zbyt wysokie temperatury mogą obniżyć fermentowalność brzeczki i wprowadzić garbnikowość.\nUżyj angielskich odmian chmielu tj. East Kent Goldings, Fuggles, Target, Challenger, głównie na goryczkę. Pomiń dodawanie chmielu na smak i aromat.\nDo fermentacji użyj klasycznych brytyjskich drożdży lub neutralnych drożdży z USA.\nPamiętaj, że odfermentowanie może różnić się w zależności od szczepu, co ostatecznie wpłynie na balans piwa."
+  },
+  "changelog": [
+    {
+      "changed_on": "2024-06-15",
+      "author": "Łukasz Wróblewski",
+      "description": "opracowanie opisu stylu na podstawie Aleksandra Hurko z kompendiumpiwa.pl oraz BJCP 2021 Style Guidelines 15B. Irish Stout."
+    }
+  ]
+}

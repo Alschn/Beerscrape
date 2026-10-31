@@ -1,0 +1,19 @@
+{
+  "url": "https://sklepimpuls.pl/produkt/fixture/",
+  "shop": "sklep-impuls",
+  "name": "BELGIA PIRAAT – Belgian Strong Ale",
+  "regular_price": 16.69,
+  "discount_price": 13.49,
+  "currency": "PLN",
+  "in_stock": true,
+  "brewery": null,
+  "styles": [
+    "Ale"
+  ],
+  "abv": 10.5,
+  "extract": null,
+  "volume_ml": 330.0,
+  "ean": "5411663002600",
+  "image_url": "https://sklepimpuls.pl/wp-content/uploads/2025/10/belgia-piraat-belgian-strong-ale-481912-800x800.jpg",
+  "description": "Mocne belgijskie piwo typu ale z bogatym słodem, suszonymi owocami i subtelnymi nutami przypraw, oferujące złożony i rozgrzewający finisz.\nIdealne dla miłośników piwa rzemieślniczego."
+}

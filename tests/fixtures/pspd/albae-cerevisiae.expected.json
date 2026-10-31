@@ -1,0 +1,46 @@
+{
+  "url": "https://pspd.org.pl/style-piwa/albae-cerevisiae",
+  "source": "pspd-styles",
+  "name": "Albae Cerevisiae",
+  "extract_blg": {
+    "min": 12.0,
+    "max": 15.0
+  },
+  "abv": {
+    "min": 4.5,
+    "max": 6.0
+  },
+  "ibu": {
+    "min": 15.0,
+    "max": 25.0
+  },
+  "color_ebc": null,
+  "description": "Parametry\nGęstość początkowa: 12-15° Blg\nGęstość końcowa: 2,5-4,0° Blg\nAlkohol objętościowo: 4,5-6,0% alk.\nGoryczka: 15-25 IBU\nBarwa: 4-12 EBC\nWygląd\nBarwa od słomkowej do ciemnozłotej. Zamglenie lub zmętnienie nie stanowią wady. Biała, drobnopęcherzykowa, trwała i wysoka piana.\nAromat\nAromaty pochodzące od słodu, ziół i estrów powinny się harmonijnie uzupełniać, jednakże z lekkim balansem w stronę ziołowości. Aromaty ziołowe (m.in. macierzanka, lipa, krwawnik, tatarak, bez – patrz sekcja \"Surowce i technologia\") średnie do średnio wysokich. Pochodzące od pszenicznej części zasypu nuty jasnego pieczywa i zbożowe na poziomie od średnio niskiego do średniego. Poziom estrów owocowych w aromacie (jabłka, morele, brzoskwinie, owoce cytrusowe) powinien być średnio niski do średniego. W niektórych przykładach ziołowości mogą towarzyszyć nuty przyprawowych fenoli (pieprz, gałka muszkatołowa) pochodzących od drożdży na poziomie średnio niskim do średniego. Aromat chmielowy maksymalnie na niskim poziomie pochodzący od klasycznych, europejskich odmian.\nSmak\nBalans smaku w stronę odsłodowej słodyczy - zgodnie z przekazem historycznym oryginalne albae cerevisiae było bowiem piwem \"bardziej słodkim niż gorzkim\". W słodowości dominują nuty jasngo pieczywa pszennego oraz nuty, zbożowe, możliwe także akcenty herbatnikowe/biszkoptowe, na poziomie średnim do średnio wysokiego. Na drugim planie, podobnie jak w aromacie, nuty ziołowe (deskryptory jak wyżej) i ewentualnie fenolowe (pieprz, gałka muszkatołowa) na poziomie średnio niskim bądź średnim. Smaki estrowe (jabłka, morele, brzoskwinie, cytrusy) powinny mieć poziom średnio niski do średniego. Może pojawić się podwyższona kwaskowatość związana z pszenicznym charakterem piwa - maksymalnie na niskim poziomie. Taki sam poziom powinny mieć smaki chmielowe o profilu odpowiadającym tradycyjnym odmianom. Posmak piwa powinien iść w stronę słodowości. Finisz półwytrawny do półsłodkiego. Brak diacetylu i DMSu.\nGoryczka\nOd niskiej do średnioniskiej, pochodząca od mieszanki chmielu i ziół, delikatna, krótka. Nie może dominować, pozostawiać wrażenia zalegania, ostrości czy ściągania.\nOdczucie w ustach\nPiwo powinno cechować się średnią pełnią, dawać odczucie rześkości. Wysycenie średnio niskie do średniego. Niewskazana jest szorstkość i ostrość, uczucie rozgrzewania, bądź też ciężkości i wyklejania.\nOgólne wrażenie\nRekonstrukcja stylu historycznego - białego piwa (tak bowiem należy tłumaczyć jego łacińską nazwę, czyt. albe cerewizje) pszenicznego, warzonego na przełomie XVI-VII w., na obszarze dzisiejszego województwa kujawsko-pomorskiego, którego znaczna część leżała wówczas na terenach Prus Królewskich. Rześkie, jasne pszeniczne ale, w którego aromacie i smaku, nutom słodowo-zbożowym towarzyszy dodatek ziół.\nSurowce i technologia\nPiwo w zasypie powinno mieć minimum 75% słodu pszenicznego, który odpowiada za jasną barwę, zmętnienie i zbożowo-słodowo-chlebowy charakter. Uzupełnieniem może być dowolny jasny słód jęczmienny. Zalecane są chmiele polskie bądź niemieckie oraz zioła lokalne, bardziej aromatyczne niż gorzkie, m.in. przykładowo: macierzanka, krwawnik, kłącze kuklika, kwiat dziewanny, kłącze tataraku, liście poziomki, kwiat lipy. Wniosą pożądany ziołowy charakter w smaku i aromacie, nie mogą jednak dominować ani dawać silnej goryczki - unikać należy zatem ziół stosowanych do produkcji gruitów takich jak np. piołun czy lawenda. Dla oddania historycznego charakteru piwa wskazane są drożdże tworzące estry i fenole – optymalne będą szczepy stosowane do piw belgijskich (niezalecane zaś te do hefe-weizenów/weissbier).",
+  "sections": {
+    "parameters": "Gęstość początkowa: 12-15° Blg\nGęstość końcowa: 2,5-4,0° Blg\nAlkohol objętościowo: 4,5-6,0% alk.\nGoryczka: 15-25 IBU\nBarwa: 4-12 EBC",
+    "appearance": "Barwa od słomkowej do ciemnozłotej. Zamglenie lub zmętnienie nie stanowią wady. Biała, drobnopęcherzykowa, trwała i wysoka piana.",
+    "aroma": "Aromaty pochodzące od słodu, ziół i estrów powinny się harmonijnie uzupełniać, jednakże z lekkim balansem w stronę ziołowości. Aromaty ziołowe (m.in. macierzanka, lipa, krwawnik, tatarak, bez – patrz sekcja \"Surowce i technologia\") średnie do średnio wysokich. Pochodzące od pszenicznej części zasypu nuty jasnego pieczywa i zbożowe na poziomie od średnio niskiego do średniego. Poziom estrów owocowych w aromacie (jabłka, morele, brzoskwinie, owoce cytrusowe) powinien być średnio niski do średniego. W niektórych przykładach ziołowości mogą towarzyszyć nuty przyprawowych fenoli (pieprz, gałka muszkatołowa) pochodzących od drożdży na poziomie średnio niskim do średniego. Aromat chmielowy maksymalnie na niskim poziomie pochodzący od klasycznych, europejskich odmian.",
+    "taste": "Balans smaku w stronę odsłodowej słodyczy - zgodnie z przekazem historycznym oryginalne albae cerevisiae było bowiem piwem \"bardziej słodkim niż gorzkim\". W słodowości dominują nuty jasngo pieczywa pszennego oraz nuty, zbożowe, możliwe także akcenty herbatnikowe/biszkoptowe, na poziomie średnim do średnio wysokiego. Na drugim planie, podobnie jak w aromacie, nuty ziołowe (deskryptory jak wyżej) i ewentualnie fenolowe (pieprz, gałka muszkatołowa) na poziomie średnio niskim bądź średnim. Smaki estrowe (jabłka, morele, brzoskwinie, cytrusy) powinny mieć poziom średnio niski do średniego. Może pojawić się podwyższona kwaskowatość związana z pszenicznym charakterem piwa - maksymalnie na niskim poziomie. Taki sam poziom powinny mieć smaki chmielowe o profilu odpowiadającym tradycyjnym odmianom. Posmak piwa powinien iść w stronę słodowości. Finisz półwytrawny do półsłodkiego. Brak diacetylu i DMSu.",
+    "bitterness": "Od niskiej do średnioniskiej, pochodząca od mieszanki chmielu i ziół, delikatna, krótka. Nie może dominować, pozostawiać wrażenia zalegania, ostrości czy ściągania.",
+    "mouthfeel": "Piwo powinno cechować się średnią pełnią, dawać odczucie rześkości. Wysycenie średnio niskie do średniego. Niewskazana jest szorstkość i ostrość, uczucie rozgrzewania, bądź też ciężkości i wyklejania.",
+    "overall_impression": "Rekonstrukcja stylu historycznego - białego piwa (tak bowiem należy tłumaczyć jego łacińską nazwę, czyt. albe cerewizje) pszenicznego, warzonego na przełomie XVI-VII w., na obszarze dzisiejszego województwa kujawsko-pomorskiego, którego znaczna część leżała wówczas na terenach Prus Królewskich. Rześkie, jasne pszeniczne ale, w którego aromacie i smaku, nutom słodowo-zbożowym towarzyszy dodatek ziół.",
+    "ingredients_and_technology": "Piwo w zasypie powinno mieć minimum 75% słodu pszenicznego, który odpowiada za jasną barwę, zmętnienie i zbożowo-słodowo-chlebowy charakter. Uzupełnieniem może być dowolny jasny słód jęczmienny. Zalecane są chmiele polskie bądź niemieckie oraz zioła lokalne, bardziej aromatyczne niż gorzkie, m.in. przykładowo: macierzanka, krwawnik, kłącze kuklika, kwiat dziewanny, kłącze tataraku, liście poziomki, kwiat lipy. Wniosą pożądany ziołowy charakter w smaku i aromacie, nie mogą jednak dominować ani dawać silnej goryczki - unikać należy zatem ziół stosowanych do produkcji gruitów takich jak np. piołun czy lawenda. Dla oddania historycznego charakteru piwa wskazane są drożdże tworzące estry i fenole – optymalne będą szczepy stosowane do piw belgijskich (niezalecane zaś te do hefe-weizenów/weissbier)."
+  },
+  "changelog": [
+    {
+      "changed_on": "2019-02-26",
+      "author": "Magdalena Bergmann",
+      "description": "opracowanie opisu stylu (kompendiumpiwa.pl)"
+    },
+    {
+      "changed_on": "2023-04-21",
+      "author": "Michał Krzysztofik, FIlip Mazur",
+      "description": "korekta i akceptacja KS"
+    },
+    {
+      "changed_on": "2024-07-02",
+      "author": "Łukasz Wróblewski",
+      "description": "korekta i akceptacja KS"
+    }
+  ]
+}

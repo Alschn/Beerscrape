@@ -1,0 +1,57 @@
+[project]
+name = "beerscrape"
+version = "0.1.0"
+description = "Scrapers for craft beer shops and brewing knowledge sources."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.14"
+dependencies = [
+    "crawlee[beautifulsoup]>=1.11.0",
+    "pydantic>=2.14.2",
+    "typer>=0.27.3",
+]
+
+[project.scripts]
+beerscrape = "beerscrape.cli:app"
+
+[build-system]
+requires = ["uv_build>=0.9.8,<0.10"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pyright>=1.1.414",
+    "pytest>=9.2.0",
+    "pytest-asyncio>=1.4.1",
+    "pytest-httpserver>=1.2.0",
+    "ruff>=0.17.3",
+]
+docs = [
+    "mkdocs-material>=9.8.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["tests"]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+addopts = "-m 'not live'"
+markers = [
+    "live: hits real websites; run on a schedule to detect markup changes",
+]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "SIM", "RUF"]
+# Scraped Polish text legitimately uses en dashes and other "ambiguous" characters.
+ignore = ["RUF001", "RUF002", "RUF003"]
+
+[tool.pyright]
+include = ["src", "tests"]
+extraPaths = ["tests"]
+venvPath = "."
+venv = ".venv"
+pythonVersion = "3.14"
+typeCheckingMode = "standard"
